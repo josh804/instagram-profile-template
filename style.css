@@ -1,0 +1,49 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.new-tracks {
+    display: flex;
+    padding: 2px 2px;
+    margin-bottom: 6px;
+    border-bottom: #777777 solid 1px;
+    display: flex;
+}
+
+.new-tracks .overlay {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(216,216,223,1) 47%, rgba(181,180,180,1) 100%);
+    width: 100%;
+    display: flex;
+}
+
+.new-tracks .thumbnail {
+    background-image: url(https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/6/5/b/a/65ba8ded0743d086ee4c756247115319.jpg);
+    width: 100px;
+    margin-right: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.new-tracks .card-info {
+    display: flex;
+    flex-direction: column;
+    margin: 22px 0px;
+    flex-grow: 1;
+}
+
+.new-tracks .views-count {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.new-tracks .card-info .title {
+    font-size: 20px;
+}
+.new-tracks .card-info .artist {
+    color: #999999;
+}
