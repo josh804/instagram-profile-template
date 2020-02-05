@@ -1,49 +1,130 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css';
+
 body {
-    font-family: sans-serif;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    background-color: #fafafa;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 
-.new-tracks {
-    display: flex;
-    padding: 2px 2px;
-    margin-bottom: 6px;
-    border-bottom: #777777 solid 1px;
-    display: flex;
+a {
+    text-decoration: none;
+    color: #111111;
+}
+a:hover {
+    color: #999999;
+
 }
 
-.new-tracks .overlay {
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(216,216,223,1) 47%, rgba(181,180,180,1) 100%);
-    width: 100%;
+.container {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 975px;
+    margin: auto;
 }
 
-.new-tracks .thumbnail {
-    background-image: url(https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/cover/6/5/b/a/65ba8ded0743d086ee4c756247115319.jpg);
-    width: 100px;
-    margin-right: 20px;
-    background-size: cover;
-    background-position: center;
+/* Navbar */
+.navbar {
+    background-color: white;
+    border-bottom: 1.5px solid #cccccc;
+    padding: 1.5rem;
 }
-
-.new-tracks .card-info {
+.search-form {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    margin: 22px 0px;
     flex-grow: 1;
+    justify-content: center;
 }
-
-.new-tracks .views-count {
+.input-wrapper {
+    position: relative;
+    display: inline-block;
+}
+.search-form #search-input {
+    padding: 0.25rem 1.7rem;
+    border: 1px solid darkgray;
+    border-radius: 9px;
+    position: relative;
+    text-align: center;
+    outline: none;
+}
+.search-form #search-icon {
+    position: absolute;
+    left: 31%;
+    bottom: 8;
+    color: darkgray;
+    width: 10px;
+}
+.navigator {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: flex-end;
+}
+.logo {
+    border-right: 1px solid #333333;
+    padding-right: 6px;
+    margin: 0px 9px;
+}
+.navigator > div {
+    margin: 0px 10px;
+}
+.site-name {
+    display: flex;
     align-items: center;
 }
-
-.new-tracks .card-info .title {
-    font-size: 20px;
+/* Profile section */
+.avatar img, .stories img {
+    border-radius: 50%;
+    border: 2px solid salmon;
+    width: 150px;
+    height: 150px;
 }
-.new-tracks .card-info .artist {
-    color: #999999;
+.stories img {
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
+}
+.avatar {
+    margin-right: 30px;
+    align-self: flex-start;
+}
+.info {
+
+}
+.blue-btn a {
+    background: #3897F0;
+    padding: 4px 15px;
+    color: #ffffff !important;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.stats {
+    display: flex;
+    align-items: center;
+}
+.stats > div {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.user-name {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 32px;
+}
+.menu {
+    text-transform: uppercase;
+    display: flex;
+    border-top: 1px solid #eeeeee;
+    margin-top: 20px;
+    justify-content: center;
+    font-weight: 500;
+}
+.menu > div {
+    margin-right: 20px;
+    padding-top: 15px;;
+}
+.menu .active {
+    border-top: 1px solid #999999;
+    margin-top: -1px;
 }
